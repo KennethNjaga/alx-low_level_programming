@@ -7,7 +7,7 @@
 
 
 /* betty style doc for function main goes there */
-
+/* Return: 0 (Always Success) */
 int main(void)
 
 {
