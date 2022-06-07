@@ -10,6 +10,7 @@ int x;
 	{
 		putchar('x');
 	}
+	putchar(x);
 	return (0);
 }
 
