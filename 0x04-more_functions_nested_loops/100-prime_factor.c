@@ -1,47 +1,24 @@
 #include <stdio.h>
 
-
-
 /**
+ * main - Entry point.
  *
- *  * main - Entry point.
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
-
-
+ * Return: Always 0.
+ */
 
 int main(void)
 
-
-
 {
+long n, i;
 
-	long n, i;
+n = 612852475143;
+for (i = 2; i < n; i++)
+{
+while (n % i == 0)
+n = n / i;
+}
 
+printf("%lu\n", n);
 
-
-	n = 612852475143;
-
-	for (i = 2; i < n; i++)
-
-	{
-
-		while (n % i == 0)
-
-			n = n / i;
-
-	}
-
-
-
-	printf("%lu\n", n);
-
-
-
-	return (0);
-
+return (0);
 }
