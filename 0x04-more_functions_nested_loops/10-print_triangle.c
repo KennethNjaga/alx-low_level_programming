@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * print_triangle -prints a triangle
- * @size: size of the triangle
- *
- * Return: void
+ * @size: print size
+ * Return: Always 0.
  */
 void print_triangle(int size)
 {
@@ -18,7 +17,7 @@ void print_triangle(int size)
 		for (row = 0; row < size; row++)
 		{
 		for (column = 0; column < row_column_limit; column++)
-			_putchar(' ');
+			_putchar(35);
 		_putchar('\\');
 		_putchar('\n');
 		row_column_limit++;
