@@ -3,26 +3,22 @@
 
 /**
 * print_diagsums - the sum of the two diagonals of a square matrix of integers
-* @a: 2d array of chars
+* @a: square matrix of which we print sum of diagonals
 * @size: number matrix
 * Return: void
 */
 
 void print_diagsums(int *a, int size)
 {
-/*Declaring variables*/
+
 int i;
-int sum1, sum2;
+unsigned int sum, sum1;
+sum = 0;
 sum1 = 0;
-sum2 = 0;
-i = 0;
-while (i < size) /*number repetitions*/
+for (i = 0; i < size; i++)
 {
-  /*sums for diagsums*/
-  sum1 = sum1 + *(a + i * size + i);
-  sum2 = sum2 + *(a + i * size + size - i - 1);
-  
-i++; /*add +1*/
+sum += a[(size * i) + i];
+sum1 += a[(size * (i + 1)) - (i + 1)];
 }
-printf("%i, %i\n", sum1, sum2);
+printf("%d,%d\n", sum, sum1);
 }
